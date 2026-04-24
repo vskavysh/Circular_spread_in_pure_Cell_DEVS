@@ -1,0 +1,50 @@
+{
+  "scenario": {
+    "shape": [51, 51],
+    "origin": [0, 0],
+    "wrapped": false
+  },
+  "cells": {
+    "default": {
+      "delay": "transport",
+      "model": "brainWave",
+      "state": {
+        "potential": -70.0,
+        "is_neuron": 0,
+        "p_fire": 0.02,
+        "n_neuron": -1
+      },
+      "neighborhood": [
+        { "type": "von_neumann", "range": 1 }
+      ]
+    },
+    "neuron1": {
+      "state": {
+        "potential": -70.0,
+        "is_neuron": 1,
+        "p_fire": 0.02,
+        "n_neuron": 1
+      },
+      "cell_map": [[30, 20]]
+    }
+  },
+  "viewer": [
+    {
+      "field": "potential",
+      "breaks": [-70.0, -60.1, -50.1, -35.1, -20.1, -5.1, 9.9, 29.9, 49.9, 74.9, 99.9, 1e9],
+      "colors": [
+        [5, 10, 40],
+        [24, 60, 120],
+        [40, 110, 180],
+        [90, 180, 220],
+        [250, 230, 140],
+        [250, 160, 80],
+        [220, 40, 40],
+        [180, 0, 80],
+        [220, 0, 180],
+        [255, 120, 220],
+        [255, 120, 220]
+      ]
+    }
+  ]
+}
